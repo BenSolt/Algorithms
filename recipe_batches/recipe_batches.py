@@ -14,15 +14,17 @@ def recipe_batches(recipe, ingredients):
     print(result)
 
     return result
-  #FOR FUN
-# TRYING ADD MORE TO INGREDIENTS
-  def add(recipe, ingredients):
-    for a, b in ingredients.items():
-      total_Ingred = ingredients + 1000
+  
+  #FOR FUN, TRYING ADD MORE TO INGREDIENTS
+  
+
 
 if __name__ == '__main__':
   # Change the entries of these dictionaries to test 
   # your implementation with different inputs
   recipe = { 'milk': 100, 'butter': 50, 'flour': 5 }
-  ingredients = { 'milk': 232, 'butter': 150, 'flour': 51 }
+  ingredients = { 'milk': 131, 'butter': 48, 'flour': 51 }
+  # MY TESTING
+
+  
   print("{batches} batches can be made from the available ingredients: {ingredients}.".format(batches=recipe_batches(recipe, ingredients), ingredients=ingredients))
