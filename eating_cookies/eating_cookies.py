@@ -6,7 +6,14 @@ import sys
 # a solution that is more efficient than the naive 
 # recursive solution
 def eating_cookies(n, cache=None):
-  pass
+  
+# MY CODE
+  # base case
+  if n <= 2:
+    return 1
+  # should move toward base case
+    return eating_cookies(n-1) + eating_cookies(n-2)
+    
 
 if __name__ == "__main__":
   if len(sys.argv) > 1:
