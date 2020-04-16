@@ -7,15 +7,13 @@ def recipe_batches(recipe, ingredients):
   
     total_created = []
     # loop over ingredients dict to pull out values 
-    for a, b in ingredients.items(): # .items = each item inside of { }, so milk:100, butter, flour
+    for a,b in ingredients.items(): # .items = each item inside of { }, so milk:100, butter, flour
         total_combinations = ingredients[a] // recipe[a]
         total_created.append(total_combinations)
         result = min(total_created)
     print(result)
 
     return result
-  
-  #FOR FUN, TRYING ADD MORE TO INGREDIENTS
   
 
 
@@ -24,7 +22,6 @@ if __name__ == '__main__':
   # your implementation with different inputs
   recipe = { 'milk': 100, 'butter': 50, 'flour': 5 }
   ingredients = { 'milk': 131, 'butter': 48, 'flour': 51 }
-  # MY TESTING
 
   
   print("{batches} batches can be made from the available ingredients: {ingredients}.".format(batches=recipe_batches(recipe, ingredients), ingredients=ingredients))

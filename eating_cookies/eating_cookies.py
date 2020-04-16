@@ -9,9 +9,7 @@ def eating_cookies(n, cache=None):
   
 # MY CODE
   # base case
-  if n == 0 :
-    return 1
-  elif n == 1:
+  if n <= 1:
     return 1
   elif n == 2:
     return 2
